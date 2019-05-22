@@ -10,10 +10,13 @@ Plug 'neovimhaskell/haskell-vim',
 Plug 'tpope/vim-fugitive',
 Plug 'tpope/vim-surround',
 Plug 'tpope/vim-sensible',
+Plug 'tpope/vim-unimpaired',
+Plug 'ervandew/supertab',
+Plug 'bronson/vim-trailing-whitespace',
 Plug 'jiangmiao/auto-pairs',
 Plug 'chr4/nginx.vim',
-Plug 'stephpy/vim-yaml',
-Plug 'christoomey/vim-tmux-navigator'
+Plug 'rbgrouleff/bclose.vim',
+Plug 'pearofducks/ansible-vim'
 
 call plug#end()
 
@@ -56,7 +59,6 @@ set updatetime=100
 set ttyfast
 set lazyredraw
 
-"
 " KEYBINDIGS
 inoremap <S-Insert> <C-r>*
 inoremap <C-v> <C-r>*
@@ -68,9 +70,6 @@ inoremap <C-S> <C-O>:update<CR>
 vnoremap <C-c> "+y
 vnoremap <C-d> "+d
 map <C-n> :NERDTreeToggle<CR>
-nnoremap <silent> <M-F12> :BufExplorer<CR>
-nnoremap <silent> <F12> :bn<CR>
-nnoremap <silent> <S-F12> :bp<CR>
 
 
 " Unmap Arrows
