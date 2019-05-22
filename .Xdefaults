@@ -1,0 +1,29 @@
+URxvt*background: Black
+URxvt*foreground: White
+URxvt*geometry: 80x30
+URxvt*scrollBar: false
+
+!-- Xft settings -- !
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintfull
+
+! -- Fonts -- !
+URxvt.font:xft:DejaVu Sans Mono for Powerline:pixelsize=15
+!URxvt.boldfont:xft:Monospace-Bold:pixelsize=15
+
+!URxvt.font:xft:Space Mono for Powerline:style=Regular:size=12
+
+URxvt*visualBell: false
+
+URxvt*transparent: true
+Urxvt*shading: 30
+URxvt*saveLines: 12000
+URxvt.depth:                32
+URxvt.internalBorder:       3
+
+URxvt.perl-ext:
+URxvt.perl-ext-common:
+

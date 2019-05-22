@@ -5,21 +5,21 @@ call plug#begin('~/.vim/autoload')
 Plug 'nanotech/jellybeans.vim',
 Plug 'vim-airline/vim-airline',
 Plug 'vim-airline/vim-airline-themes',
-"Plug 'scrooloose/nerdtree',
+Plug 'scrooloose/nerdtree',
 Plug 'neovimhaskell/haskell-vim',
 Plug 'tpope/vim-fugitive',
 Plug 'tpope/vim-surround',
 Plug 'tpope/vim-sensible',
 Plug 'jiangmiao/auto-pairs',
 Plug 'chr4/nginx.vim',
+Plug 'stephpy/vim-yaml',
 Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
-"let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#tabline#formatter = 'unique_tail'
-"let g:airline_powerline_fonts = 1
-"
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline_powerline_fonts = 1"
 colorscheme jellybeans
 
 syntax on
@@ -62,13 +62,16 @@ inoremap <S-Insert> <C-r>*
 inoremap <C-v> <C-r>*
 cnoremap <S-Insert> <C-r>*
 cnoremap <C-v> <C-r>*
-noremap <C-S> :update
+nnoremap <C-S> :update
 vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR>
 vnoremap <C-c> "+y
 vnoremap <C-d> "+d
 map <C-n> :NERDTreeToggle<CR>
-noremap <C-Tab> :bn<CR>
+nnoremap <silent> <M-F12> :BufExplorer<CR>
+nnoremap <silent> <F12> :bn<CR>
+nnoremap <silent> <S-F12> :bp<CR>
+
 
 " Unmap Arrows
 nmap <up> <nop>
