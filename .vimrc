@@ -16,13 +16,19 @@ Plug 'bronson/vim-trailing-whitespace',
 Plug 'jiangmiao/auto-pairs',
 Plug 'chr4/nginx.vim',
 Plug 'rbgrouleff/bclose.vim',
-Plug 'pearofducks/ansible-vim'
+Plug 'ctrlpvim/ctrlp.vim',
+Plug 'pearofducks/ansible-vim',
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline_powerline_fonts = 1"
+let g:nerdtree_tabs_autoclose=0
+
+autocmd QuickFixCmdPost *grep* cwindow
+
 colorscheme jellybeans
 
 syntax on
@@ -36,8 +42,8 @@ set smarttab
 set smartindent
 set autoindent
 set expandtab
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
 set laststatus=2
 set noshowmode
 set incsearch
@@ -60,25 +66,25 @@ set ttyfast
 set lazyredraw
 
 " KEYBINDIGS
+
 inoremap <S-Insert> <C-r>*
-inoremap <C-v> <C-r>*
 cnoremap <S-Insert> <C-r>*
-cnoremap <C-v> <C-r>*
-nnoremap <C-S> :update
-vnoremap <C-S> <C-C>:update<CR>
-inoremap <C-S> <C-O>:update<CR>
-vnoremap <C-c> "+y
-vnoremap <C-d> "+d
 map <C-n> :NERDTreeToggle<CR>
 
+" Leader Mappings
+
+map <Leader>w :update<CR>
+map <Leader>q :Bclose<CR>
 
 " Unmap Arrows
+
 nmap <up> <nop>
 nmap <down> <nop>
 nmap <left> <nop>
 nmap <right> <nop>
-"
+
 "Fix some common typos
+
 cnoreabbrev W! w!
 cnoreabbrev Q! q!
 cnoreabbrev Qall! qall!
