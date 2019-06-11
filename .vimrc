@@ -11,6 +11,7 @@ Plug 'tpope/vim-fugitive',
 Plug 'tpope/vim-surround',
 Plug 'tpope/vim-sensible',
 Plug 'tpope/vim-unimpaired',
+Plug 'tpope/vim-sleuth',
 Plug 'ervandew/supertab',
 Plug 'bronson/vim-trailing-whitespace',
 Plug 'jiangmiao/auto-pairs',
@@ -18,7 +19,8 @@ Plug 'chr4/nginx.vim',
 Plug 'rbgrouleff/bclose.vim',
 Plug 'ctrlpvim/ctrlp.vim',
 Plug 'pearofducks/ansible-vim',
-Plug 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-navigator',
+Plug 'junegunn/gv.vim'
 
 call plug#end()
 
@@ -51,6 +53,7 @@ set hlsearch
 set shortmess+=A
 set encoding=utf-8
 set completeopt-=preview
+set clipboard=unnamedplus
 set nospell
 set noswapfile
 set noerrorbells
@@ -75,6 +78,12 @@ map <C-n> :NERDTreeToggle<CR>
 
 map <Leader>w :update<CR>
 map <Leader>q :Bclose<CR>
+map <Leader>wd :wq!<CR>
+map <Leader>d :q!<CR>
+map <Leader>gp :Gpush<CR>
+map <Leader>gw :Gwrite<CR>
+map <Leader>gc :Gcommit<CR>
+map <Leader>gs :Gstatus<CR>
 
 " Unmap Arrows
 
