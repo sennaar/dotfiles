@@ -6,22 +6,18 @@ Plug 'nanotech/jellybeans.vim',
 Plug 'vim-airline/vim-airline',
 Plug 'vim-airline/vim-airline-themes',
 Plug 'scrooloose/nerdtree',
-Plug 'neovimhaskell/haskell-vim',
 Plug 'tpope/vim-fugitive',
 Plug 'tpope/vim-surround',
 Plug 'tpope/vim-sensible',
 Plug 'tpope/vim-unimpaired',
 Plug 'tpope/vim-sleuth',
-Plug 'ervandew/supertab',
 Plug 'bronson/vim-trailing-whitespace',
 Plug 'jiangmiao/auto-pairs',
-Plug 'chr4/nginx.vim',
 Plug 'rbgrouleff/bclose.vim',
 Plug 'ctrlpvim/ctrlp.vim',
-Plug 'pearofducks/ansible-vim',
 Plug 'christoomey/vim-tmux-navigator',
-Plug 'junegunn/gv.vim'
-
+Plug 'chr4/nginx.vim',
+Plug 'pearofducks/ansible-vim'
 call plug#end()
 
 let g:airline#extensions#tabline#enabled = 1
@@ -32,6 +28,7 @@ let g:nerdtree_tabs_autoclose=0
 autocmd QuickFixCmdPost *grep* cwindow
 
 colorscheme jellybeans
+
 
 syntax on
 filetype plugin indent on
@@ -68,6 +65,7 @@ set updatetime=100
 set ttyfast
 set lazyredraw
 
+
 " KEYBINDIGS
 
 inoremap <S-Insert> <C-r>*
@@ -78,8 +76,8 @@ map <C-n> :NERDTreeToggle<CR>
 
 map <Leader>w :update<CR>
 map <Leader>q :Bclose<CR>
-map <Leader>wd :wq!<CR>
-map <Leader>d :q!<CR>
+map <Leader>wd :wq<CR>
+map <Leader>d :q<CR>
 map <Leader>gp :Gpush<CR>
 map <Leader>gw :Gwrite<CR>
 map <Leader>gc :Gcommit<CR>
