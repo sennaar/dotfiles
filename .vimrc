@@ -78,7 +78,7 @@ map <Leader>w :update<CR>
 map <Leader>q :Bclose<CR>
 map <Leader>wd :wq<CR>
 map <Leader>d :q<CR>
-map <Leader>gp :AsyncRun Gpush<CR>
+map <Leader>gp :Gpush<CR>
 map <Leader>gw :Gwrite<CR>
 map <Leader>gc :Gcommit<CR>
 map <Leader>gs :Gstatus<CR>

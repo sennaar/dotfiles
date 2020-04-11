@@ -1,5 +1,5 @@
-URxvt*background: #121212
-URxvt*foreground: White
+!URxvt*background: #121212
+!URxvt*foreground: White
 URxvt*geometry: 80x30
 URxvt*scrollBar: false
 
@@ -17,7 +17,6 @@ URxvt.font:xft:DejaVu Sans Mono for Powerline:pixelsize=15
 !URxvt.font:xft:Space Mono for Powerline:style=Regular:size=12
 
 URxvt*visualBell: false
-
 URxvt*transparent: true
 Urxvt*shading: 30
 URxvt*saveLines: 12000
@@ -28,3 +27,39 @@ URxvt*loginShell:  true
 
 URxvt.perl-ext:
 URxvt.perl-ext-common:
+
+!
+!!
+!!!
+
+*.foreground: White
+*.background: #121212
+*.cursorColor: #afbfbf
+
+! black
+*.color0: #263640
+*.color8: #4a697d
+
+! red
+*.color1: #d12f2c
+*.color9: #fa3935
+
+! yellow
+*.color3: #b08500
+*.color11: #d9a400
+
+! blue
+*.color4: #2587cc
+*.color12: #2ca2f5
+
+! magenta
+*.color5: #696ebf
+*.color13: #8086e8
+
+! cyan
+*.color6: #289c93
+*.color14: #33c5ba
+
+! white
+*.color7: #bfbaac
+*.color15: #fdf6e3
