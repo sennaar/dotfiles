@@ -1,4 +1,4 @@
-URxvt*background: Black
+URxvt*background: #121212
 URxvt*foreground: White
 URxvt*geometry: 80x30
 URxvt*scrollBar: false
@@ -24,7 +24,7 @@ URxvt*saveLines: 12000
 URxvt.depth:                32
 URxvt.internalBorder:       3
 
+URxvt*loginShell:  true
+
 URxvt.perl-ext:
 URxvt.perl-ext-common:
-
-!

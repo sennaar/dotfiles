@@ -2,33 +2,34 @@ set rtp+=~/.vim/autoload/
 
 call plug#begin('~/.vim/autoload')
 
+"haskell
+Plug 'neovimhaskell/haskell-vim',
 Plug 'nanotech/jellybeans.vim',
 Plug 'vim-airline/vim-airline',
 Plug 'vim-airline/vim-airline-themes',
 Plug 'scrooloose/nerdtree',
 Plug 'tpope/vim-fugitive',
-Plug 'tpope/vim-surround',
 Plug 'tpope/vim-sensible',
-Plug 'tpope/vim-unimpaired',
 Plug 'tpope/vim-sleuth',
+Plug 'tpope/vim-unimpaired',
 Plug 'bronson/vim-trailing-whitespace',
-Plug 'jiangmiao/auto-pairs',
 Plug 'rbgrouleff/bclose.vim',
 Plug 'ctrlpvim/ctrlp.vim',
 Plug 'christoomey/vim-tmux-navigator',
 Plug 'chr4/nginx.vim',
-Plug 'pearofducks/ansible-vim'
+Plug 'skywind3000/asyncrun.vim'
+
 call plug#end()
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline_powerline_fonts = 1"
 let g:nerdtree_tabs_autoclose=0
+let g:asyncrun_open = 6
 
 autocmd QuickFixCmdPost *grep* cwindow
 
 colorscheme jellybeans
-
 
 syntax on
 filetype plugin indent on
@@ -50,7 +51,7 @@ set hlsearch
 set shortmess+=A
 set encoding=utf-8
 set completeopt-=preview
-set clipboard=unnamedplus
+set clipboard=unnamed
 set nospell
 set noswapfile
 set noerrorbells
@@ -64,7 +65,6 @@ set ruler
 set updatetime=100
 set ttyfast
 set lazyredraw
-
 
 " KEYBINDIGS
 
@@ -82,6 +82,8 @@ map <Leader>gp :Gpush<CR>
 map <Leader>gw :Gwrite<CR>
 map <Leader>gc :Gcommit<CR>
 map <Leader>gs :Gstatus<CR>
+nnoremap <Leader>m :asyncrun make<CR>
+nnoremap <F12> :call asyncrun#quickfix_toggle(6)<cr>
 
 " Unmap Arrows
 
