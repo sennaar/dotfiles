@@ -11,7 +11,7 @@ Xft.hinting:    true
 Xft.hintstyle:  hintfull
 
 ! -- Fonts -- !
-URxvt.font:xft:DejaVu Sans Mono for Powerline:pixelsize=15
+URxvt.font:xft:DejaVu Sans Mono for Powerline:pixelsize=17
 !URxvt.boldfont:xft:Monospace-Bold:pixelsize=15
 
 !URxvt.font:xft:Space Mono for Powerline:style=Regular:size=12

@@ -1,8 +1,9 @@
+"curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 set rtp+=~/.vim/autoload/
 
 call plug#begin('~/.vim/autoload')
 
-"haskell
+Plug 'will133/vim-dirdiff'
 Plug 'neovimhaskell/haskell-vim',
 Plug 'nanotech/jellybeans.vim',
 Plug 'vim-airline/vim-airline',
@@ -78,6 +79,7 @@ map <Leader>w :update<CR>
 map <Leader>q :Bclose<CR>
 map <Leader>wd :wq<CR>
 map <Leader>d :q<CR>
+map <Leader>gu :Gpull<CR>
 map <Leader>gp :Gpush<CR>
 map <Leader>gw :Gwrite<CR>
 map <Leader>gc :Gcommit<CR>

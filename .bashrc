@@ -2,6 +2,8 @@ cd ~
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
+xmodmap -e "keycode 9 = F9"
+xmodmap -e "keycode 8 = Escape NoSymbol Escape"
 export PATH=$PATH:/opt/ghc/bin/:/opt/cabal/bin/
 export DISPLAY=192.168.1.17:0
 # If not running interactively, don't do anything
