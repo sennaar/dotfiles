@@ -44,6 +44,11 @@ URxvt.perl-ext-common:
 *.color1: #d12f2c
 *.color9: #fa3935
 
+! green
+!*.color10: #005f00
+!*.color10: #a4bd00
+
+
 ! yellow
 *.color3: #b08500
 *.color11: #d9a400
