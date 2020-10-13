@@ -1,11 +1,13 @@
 cd ~
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
+
+#URM2
+export KUBECONFIG=/home/sorlov/.kube/config
+
 xmodmap -e "keycode 9 = F9"
 xmodmap -e "keycode 8 = Escape NoSymbol Escape"
-export PATH=$PATH:/opt/ghc/bin/:/opt/cabal/bin/
-export DISPLAY=192.168.1.17:0
+export DISPLAY=192.168.1.222:0
+
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -119,3 +121,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+[ -f "/home/sorlov/.ghcup/env" ] && source "/home/sorlov/.ghcup/env" # ghcup-env
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
