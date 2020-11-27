@@ -1,5 +1,8 @@
 cd ~
-
+# Launch Zsh
+# if [ -t 1 ]; then
+# exec zsh
+# fi
 #URM2
 export KUBECONFIG=/home/sorlov/.kube/config
 
@@ -68,6 +71,9 @@ else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 unset color_prompt force_color_prompt
+
+ # export PS1="[\[$(tput bold)\]\[$(tput setaf 2)\]\A@\[\033[01;34m\]\w\[\033[00m\]\]\\$\[$(tput sgr0)\]]"
+# export PS1="\[$(tput bold)\]\[$(tput setaf 2)\][\u@\h \W]\\$ \[$(tput sgr0)\]"
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
