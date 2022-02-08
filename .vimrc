@@ -23,7 +23,15 @@ Plug 'skywind3000/asyncrun.vim',
 Plug 'sheerun/vim-polyglot',
 Plug 'junegunn/fzf',
 Plug 'junegunn/fzf.vim',
-Plug 'mileszs/ack.vim'
+Plug 'mileszs/ack.vim',
+Plug 'wikitopian/hardmode',
+Plug 'michaeljsmith/vim-indent-object',
+Plug 'kana/vim-textobj-entire',
+Plug 'kana/vim-textobj-user',
+Plug 'kana/vim-textobj-line'
+
+
+
 
 
 
@@ -36,6 +44,7 @@ let g:nerdtree_tabs_autoclose=0
 let g:asyncrun_open = 6
 
 autocmd QuickFixCmdPost *grep* cwindow
+" autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 colorscheme jellybeans
 
@@ -87,11 +96,11 @@ map <C-n> :NERDTreeToggle<CR>
 map <Leader>w :update<CR>
 map <Leader>q :Bclose<CR>
 map <Leader>d :q<CR>
-map <Leader>gu :Gpull --rebase<CR>
-map <Leader>gp :Gpush<CR>
+map <Leader>gu :Git pull --rebase<CR>
+map <Leader>gp :Git push<CR>
 map <Leader>gw :Gwrite<CR>
-map <Leader>gc :Gcommit<CR>
-map <Leader>gs :Gstatus<CR>
+map <Leader>gc :Git commit<CR>
+map <Leader>gs :Git<CR>
 nnoremap <F5> :AsyncRun make<CR>
 nnoremap <F12> :call asyncrun#quickfix_toggle(6)<cr>
 
